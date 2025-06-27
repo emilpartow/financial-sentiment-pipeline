@@ -65,6 +65,7 @@ your_project/
 ## Requirements
 
 - All dependencies in `requirements.txt`
+
 Tested with Python 3.11.9.  
 Other Python 3.11+ versions should also work, but compatibility is not guaranteed.
 

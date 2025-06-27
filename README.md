@@ -3,6 +3,16 @@
 This repository provides a pipeline for collecting, enriching, and analyzing Reddit posts related to financial companies and topics.  
 It uses [PRAW](https://praw.readthedocs.io/en/stable/) for data collection and [FinBERT](https://huggingface.co/yiyanghkust/finbert-tone) for finance-specific sentiment analysis.
 
+## Disclaimer
+
+This project is for research, educational, and demonstration purposes only.
+
+**Nothing in this repository constitutes financial advice or investment recommendations.**  
+The data, analysis, and code provided here are not intended to be used for making trading or investment decisions.  
+Use at your own risk.
+
+Always do your own research and consult with a qualified financial advisor before making any investment decisions.
+
 ## Features
 
 - **Automated Reddit Data Collection:**  

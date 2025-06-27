@@ -32,15 +32,19 @@ your_project/
 │       └── ...
 │
 ├── sentiment_analysis/
+│   ├── finbert_sentiment.py          # FinBERT sentiment analysis utility class
 │   ├── enrich_sentiment.py           # Batch-enrich collected data with FinBERT sentiment
 │   ├── enrich_sentiment.log          # Log file for enrichment runs
 │   └── results/                      # Enriched (with sentiment) CSVs (per company)
 │       ├── apple_sentiment_reddit.csv
 │       ├── microsoft_sentiment_reddit.csv
 │       └── ...
-│
-├── finbert_sentiment.py              # FinBERT sentiment analysis utility class
+│ 
+├── demo/                           
+│   └── example_plot.py
+│ 
 ├── requirements.txt
+│ 
 ├── README.md
 └── .gitignore
 ```
@@ -71,3 +75,8 @@ your_project/
    ```sh
    python enrich_sentiment.py
    ```
+   
+## Demos & Example Plots
+
+See the `demo/` folder for an example script showing
+how to visualize the enriched data.

@@ -5,6 +5,9 @@ Uses PRAW to fetch recent Reddit submissions about each company/keyword in the g
 saves results per company (across all subreddits) as CSV, and only appends truly new posts
 (not already in the existing file).
 
+Reddit API credentials must be provided (see reddit_config.py or use environment variables).
+How to get credentials: https://github.com/reddit-archive/reddit/wiki/OAuth2
+
 Can be used as a library function or in a scheduled script.
 
 Args:
@@ -40,9 +43,6 @@ import logging
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import reddit_config
-
-# Jetzt kannst du z.B. verwenden:
-CLIENT_ID = config.CLIENT_ID
 
 def collect_reddit_posts(
     companies,

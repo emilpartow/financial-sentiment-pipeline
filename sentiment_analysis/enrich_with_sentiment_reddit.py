@@ -11,6 +11,11 @@ and saves/updates enriched CSVs with sentiment columns.
 Directory structure:
     data_collection/data/            # raw Reddit post CSVs, e.g. 'apple_reddit.csv'
     sentiment_analysis/results/      # enriched output files, e.g. 'apple_sentiment_reddit.csv'
+
+Usage:
+    $ python enrich_sentiment.py
+
+Each run processes all new posts in all CSV files found in the raw data directory.
 """
 
 import os

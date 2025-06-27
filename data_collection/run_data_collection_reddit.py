@@ -4,7 +4,11 @@ Script to collect and regularly update Reddit posts about multiple companies acr
 - Runs one-off or scheduled collection using the collect_reddit_posts function.
 - Saves data per company (across all subreddits) as CSV.
 - Logs progress and errors to file and terminal.
+
+Note:
+    Reddit API credentials must be set in reddit_config.py (not tracked in git).
 """
+
 
 import logging
 import time

@@ -18,8 +18,8 @@ import yfinance as yf
 from datetime import timedelta
 
 # === USER SETTINGS ===
-STOCK = "microsoft"      # Name for filepaths/identification (e.g., "apple")
-TICKER = "MSFT"          # Yahoo Finance ticker (e.g., "AAPL" for Apple)
+STOCK = "apple"      # Name for filepaths/identification (e.g., "apple")
+TICKER = "AAPL"          # Yahoo Finance ticker (e.g., "AAPL" for Apple)
 
 RESULTS_FILE = f"sentiment_analysis/results/{STOCK}_sentiment_reddit.csv"
 N_DAYS = 60              # Total number of days to analyze (history length)
@@ -80,11 +80,11 @@ color_sent = "royalblue"
 color_ret = "darkorange"
 
 # --- Panel 1: Rolling Sentiment & Daily Return ---
-ax1.set_title(f"{TICKER} (Microsoft): Sentiment vs. Return", fontsize=13)
+ax1.set_title(f"{TICKER}: Sentiment vs. Return", fontsize=13)
 ax1.set_xlabel("Date", fontsize=11)
 ax1.set_ylabel(f"Reddit Sentiment (rolling {ROLLING_WINDOW} days)", color=color_sent, fontsize=11)
 ax1.plot(rolling_sentiment.index, rolling_sentiment.values, marker='o', color=color_sent, linewidth=2, label="Sentiment")
-ax1.axhline(sentiment_neutral, color='grey', linestyle='--', linewidth=1, alpha=0.8, label="Sentiment Neutral")
+ax1.axhline(sentiment_neutral, color='grey', linestyle='--', linewidth=1, alpha=0.8)
 ax1.set_ylim(sent_ylim)
 ax1.tick_params(axis='y', labelcolor=color_sent)
 ax1.grid(True, linestyle=':', alpha=0.3)
@@ -106,7 +106,7 @@ stock_in_range = stock.loc[(stock['date'] >= first_date) & (stock['date'] <= las
 ax3.plot(stock_in_range['date'], stock_in_range['Close'], color='black', linewidth=2)
 ax3.set_xlabel("Date", fontsize=11)
 ax3.set_ylabel("Close Price (USD)", fontsize=11)
-ax3.set_title(f"{TICKER} (Microsoft): Closing Price", fontsize=13)
+ax3.set_title(f"{TICKER}: Closing Price", fontsize=13)
 ax3.grid(True, linestyle=':', alpha=0.3)
 
 # Rotate x-ticks for both panels for readability

@@ -125,8 +125,8 @@ if __name__ == "__main__":
         CLIENT_ID,
         CLIENT_SECRET,
         USER_AGENT,
-        sleep_time=3,
-        posts_per_subreddit=100,
+        sleep_time=1,
+        posts_per_subreddit=1000,
         save_dir="data_collection/data"
     )
 

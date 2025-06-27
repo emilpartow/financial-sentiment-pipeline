@@ -23,8 +23,11 @@ Always do your own research and consult with a qualified financial advisor befor
   Only new posts are processed and appended to the results, so repeated runs are efficient.
 - **Easy CSV Export:**  
   Both raw and sentiment-enriched data are saved as CSV files for further analysis or visualization.
-- **Configurable and Modular:**  
+- **Costumizable:**  
   Supports flexible company/keyword lists, subreddits, and collection intervals.
+- **Easily Extendable:**  
+  The modular design allows you to easily add new companies, subreddits, or even other social media/comment sources. You can customize or expand the pipeline for your own research needs.
+
 
 ## Directory Structure
 ```

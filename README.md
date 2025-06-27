@@ -17,6 +17,33 @@ It uses [PRAW](https://praw.readthedocs.io/en/stable/) for data collection and [
   Supports flexible company/keyword lists, subreddits, and collection intervals.
 
 ## Directory Structure
+```
+your_project/
+│
+├── reddit_config.py                  # (Your Reddit API credentials, not in git)
+│
+├── data_collection/
+│   ├── run_data_collection.py        # Script to collect Reddit data (batch/scheduled)
+│   ├── reddit_collector.log          # Log file for collection runs
+│   ├── data_collection.py            # Core collection functions
+│   └── data/                         # Raw collected Reddit CSVs (per company)
+│       ├── apple_reddit.csv
+│       ├── microsoft_reddit.csv
+│       └── ...
+│
+├── sentiment_analysis/
+│   ├── enrich_sentiment.py           # Batch-enrich collected data with FinBERT sentiment
+│   ├── enrich_sentiment.log          # Log file for enrichment runs
+│   └── results/                      # Enriched (with sentiment) CSVs (per company)
+│       ├── apple_sentiment_reddit.csv
+│       ├── microsoft_sentiment_reddit.csv
+│       └── ...
+│
+├── finbert_sentiment.py              # FinBERT sentiment analysis utility class
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ## Usage
 

@@ -3,6 +3,16 @@
 This repository provides a pipeline for collecting, enriching, and analyzing Reddit posts related to financial companies and topics.  
 It uses [PRAW](https://praw.readthedocs.io/en/stable/) for data collection and [FinBERT](https://huggingface.co/yiyanghkust/finbert-tone) for finance-specific sentiment analysis.
 
+## Disclaimer
+
+This project is for research, educational, and demonstration purposes only.
+
+**Nothing in this repository constitutes financial advice or investment recommendations.**  
+The data, analysis, and code provided here are not intended to be used for making trading or investment decisions.  
+Use at your own risk.
+
+Always do your own research and consult with a qualified financial advisor before making any investment decisions.
+
 ## Features
 
 - **Automated Reddit Data Collection:**  
@@ -13,8 +23,9 @@ It uses [PRAW](https://praw.readthedocs.io/en/stable/) for data collection and [
   Only new posts are processed and appended to the results, so repeated runs are efficient.
 - **Easy CSV Export:**  
   Both raw and sentiment-enriched data are saved as CSV files for further analysis or visualization.
-- **Configurable and Modular:**  
-  Supports flexible company/keyword lists, subreddits, and collection intervals.
+- **Customizable & Easily Extendable:**  
+  Supports flexible company/keyword lists, subreddits, and collection intervals. You can customize or expand the pipeline for your own research needs.
+
 
 ## Directory Structure
 ```
@@ -49,6 +60,13 @@ your_project/
 └── .gitignore
 ```
 
+## Requirements
+
+- All dependencies in `requirements.txt`
+
+Tested with Python 3.11.9.  
+Other Python 3.11+ versions should also work, but compatibility is not guaranteed.
+
 ## Usage
 
 1. **Set up Reddit API credentials:**  
@@ -80,3 +98,18 @@ your_project/
 
 See the `demo/` folder for an example script showing
 how to visualize the enriched data.
+
+## Sample Data Included
+
+For demonstration and testing purposes, this repository includes small example CSV files for the companies **Apple**, **Tesla**, and **Microsoft**:
+
+- `data_collection/data/`
+    - Contains sample Reddit post CSVs (`apple_reddit.csv`, `tesla_reddit.csv`, `microsoft_reddit.csv`), each with a few example comments. This allows the demo scripts and plots to run out of the box and illustrates the expected input structure.
+
+- `sentiment_analysis/results/`
+    - Contains corresponding sample enriched files (`apple_sentiment_reddit.csv`, etc.), showing what the output of the sentiment analysis step looks like.
+
+**Note:**  
+These files are for demo and development only.  
+For your own analysis, replace them with actual Reddit data collected using the scripts in this repository.
+

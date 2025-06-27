@@ -15,6 +15,6 @@ Fill in your credentials below before running any scripts that access Reddit!
 DO NOT share or commit your credentials to public repositories.
 """
 
-CLIENT_ID = ""       # e.g. "your_client_id"
-CLIENT_SECRET = ""   # e.g. "your_client_secret"
-USER_AGENT = ""      # e.g. "MyRedditApp by /u/yourusername"
+CLIENT_ID = "your_client_id"
+CLIENT_SECRET = "your_client_secret"
+USER_AGENT = "MyRedditApp by /u/yourusername"

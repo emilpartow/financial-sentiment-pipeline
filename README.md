@@ -80,3 +80,18 @@ your_project/
 
 See the `demo/` folder for an example script showing
 how to visualize the enriched data.
+
+## Sample Data Included
+
+For demonstration and testing purposes, this repository includes small example CSV files for the companies **Apple**, **Tesla**, and **Microsoft**:
+
+- `data_collection/data/`
+    - Contains sample Reddit post CSVs (`apple_reddit.csv`, `tesla_reddit.csv`, `microsoft_reddit.csv`), each with a few example comments. This allows the demo scripts and plots to run out of the box and illustrates the expected input structure.
+
+- `sentiment_analysis/results/`
+    - Contains corresponding sample enriched files (`apple_sentiment_reddit.csv`, etc.), showing what the output of the sentiment analysis step looks like.
+
+**Note:**  
+These files are for demo and development only.  
+For your own analysis, replace them with actual Reddit data collected using the scripts in this repository.
+
